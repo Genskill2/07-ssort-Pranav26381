@@ -50,19 +50,16 @@ int main(void) {
   test_swap_max();
   test_ssort();
   }
-
 void swap_max(int a[],int l,int n){
   int k=a[n];
   int m=-1;
   for(int i=n+1;i<l;i++){
     if(k<a[i]){k=a[i];
-               m=i;
-              }
+               m=i;}
   }
-  if(m!=-1){
-    a[m]=a[n];
-    a[n]=k;
-  }		
+  if(m!=-1){ a[m]=a[n];
+            a[n]=k;
+           }	
   return 0;
 }
 void ssort(int a[],int l){ 
